@@ -1,0 +1,53 @@
+import React,{Component} from 'react';
+class projects extends Component
+{
+    render()
+    {
+        return (
+            <div className="mb-8 w-2/5 pt-8 pb-2 font-semibold text-2xl border-b border-gray-300 ml-auto mr-auto">
+                Projects
+                <div className="mt-6 text-xl">
+                    2020 ICT Hanium Contest(Lawbot)
+                </div>
+                <div className="mt-2 text-base">
+                    Backend CTO
+                </div>
+                <div className="mt-6 text-xl">
+                    Web Development
+                </div>
+                <div className="mt-2 text-base">
+                    2020.01 ~ present
+                    <br></br>
+                    node.js,express.js,sequelize,MySql,postgreSQL,spring,react.js,tailwind.css,docker
+                </div>
+                <div className="mt-6 text-xl">
+                    AWS
+                </div>
+                <div className="mt-2 text-base">
+                    2020.07 ~ present
+                    <br></br>
+                    ec2 instance,rds,lightsail,sns
+                </div>
+                <div className="mt-6 text-xl">
+                    Problem Solving
+                </div>
+                <div className="mt-2 text-base">
+                    2019.09 ~ present
+                    <br></br>
+                    <a href="https://www.acmicpc.net/user/yoonseokch">Baekjoon</a>
+                    , Programming Contests(ICPC,SCPC)
+                </div>
+                <div className="mt-6 text-xl">
+                    Programming Languages
+                </div>
+                <div className="mt-2 text-base">
+                    2016.03 ~ present
+                    <br></br>
+                    c++,javascript,java,kotlin,python
+                </div>
+            </div>
+        );
+    }
+}
+
+export default projects;

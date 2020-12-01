@@ -9,7 +9,7 @@ class Links extends Component
         return (
             <div>
                 <div className="w-full bg-gray-100 inline-block">
-                    <div className="w-2/3 ml-auto mr-auto">
+                    <div className="w-1/2 ml-auto mr-auto">
                         <div className="my-8 inline-block w-full md:w-1/3 float-left bg-white bg-gray-100">
                             <a href="https://github.com/yoonseokch">
                                 <img alt="github" className="w-1/2 block ml-auto mr-auto mt-8"src={github}></img>
