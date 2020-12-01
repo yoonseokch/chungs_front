@@ -14,8 +14,8 @@ class App extends Component
           <Switch>
             <Route exact path="/" component={Main}/>
             {/* <Route path="/post" component={boards}/>
-            <Route path="/me" component={analyze}/>
-            <Redirect path="*" to="/" /> */}
+            <Route path="/me" component={analyze}/> */}
+            <Redirect path="*" to="/" />
           </Switch>
       </Router>
     </div>
