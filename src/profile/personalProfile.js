@@ -1,23 +1,30 @@
 import React,{Component} from 'react';
+import Profileli from './profileli';
 class profile extends Component
 {
+    state = {
+        data : []
+    }
+    componentDidMount(){
+        fetch(`${process.env.REACT_APP_fetch_url}/profile/personalprofile`)
+        .then((res)=>{
+            return res.json();
+        })
+        .then((data)=>
+        {
+            this.setState({
+                data:data
+            });
+        })
+    }
     render()
     {
         return (
-            <div className="w-2/5 pt-8 pb-2 font-semibold text-2xl border-b border-gray-300 ml-auto mr-auto">
+            <div className="md:w-2/5 w-full pl-2 md:pl-0 pt-8 pb-2 font-semibold text-2xl border-b border-gray-300 ml-auto mr-auto">
                 Personal Profile
-                <div className="mt-6 text-xl">
-                    정윤석(Yoonseok Chung)
-                </div>
-                <div className="mt-2 text-base">
-                    24 years old, Male, Military exemption
-                </div>
-                <div className="mt-6 text-xl">
-                    Yonsei University, Bachelor of Computer Science
-                </div>
-                <div className="mt-2 text-base">
-                    2016.03 ~ present
-                </div>
+                {this.state.data.map((post,idx) => (
+                <Profileli key={idx} contents={post}/>
+                ))}
             </div>
         );
     }

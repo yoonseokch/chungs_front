@@ -8,7 +8,7 @@ class profile extends Component
     {
         return (
             <div className="w-full bg-gray-100">
-                <div className="pl-4 w-2/5 pt-8 pb-2 font-bold text-3xl border-b border-gray-300  ml-auto mr-auto">
+                <div className="pl-4 md:w-2/5 w-full pl-2 md:pl-0 pt-8 pb-2 font-bold text-3xl border-b border-gray-300  ml-auto mr-auto">
                     Me
                 </div>
                 <PersonalProfile/>
