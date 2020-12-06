@@ -4,6 +4,7 @@ import { Redirect,Route, BrowserRouter as Router, Switch } from "react-router-do
 import TopBar from './topBar.js';
 import Main from './main/mainScreen.js';
 import Profile from './profile/profile.js';
+import Boards from './boards/boards.js';
 class App extends Component
 {
   render()
@@ -15,8 +16,8 @@ class App extends Component
           <Switch>
             <Route exact path="/" component={Main}/>
             <Route exact path="/me" component={Profile}/>
-            {/* <Route path="/post" component={boards}/>
-            <Route path="/me" component={analyze}/> */}
+            <Route exact path="/board" component={Boards}/>
+            {/* <Route path="/me" component={analyze}/> */}
             <Redirect path="*" to="/" />
           </Switch>
       </Router>
