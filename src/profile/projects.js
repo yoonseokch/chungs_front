@@ -15,7 +15,7 @@ class projects extends Component
             this.setState({
                 data:data
             });
-            console.log(this.state.data);
+       //     console.log(this.state.data);
         })
     }
     render()

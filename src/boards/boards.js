@@ -7,7 +7,7 @@ class boards extends Component
     render()
     {
         return (
-            <div className="w-full">
+            <div className="sticky">
                 <Category/>
                 <Router>
                     <Switch>

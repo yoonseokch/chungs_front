@@ -13,7 +13,6 @@ class categories extends Component
         })
         .then((data)=>
         {
-            console.log(data);
             this.setState({
                 categories:data
             });
@@ -23,7 +22,7 @@ class categories extends Component
     {
         return (
             <div>
-                <div className="border-r w-64 h-screen fixed bg-gray-100">
+                <div className="md:visible invisible border-r md:w-64 w-0 h-screen float-left bg-white">
                     <div className="pt-8 w-full text-center font-semibold text-2xl">
                         Category
                     </div>
