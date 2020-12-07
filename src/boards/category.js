@@ -22,7 +22,7 @@ class categories extends Component
     {
         return (
             <div>
-                <div className="md:visible invisible border-r md:w-64 w-0 h-screen float-left bg-white">
+                <div className="md:visible invisible border-r lg:w-96 md:w-64 w-0 h-screen float-left bg-white">
                     <div className="pt-8 w-full text-center font-semibold text-2xl">
                         Category
                     </div>

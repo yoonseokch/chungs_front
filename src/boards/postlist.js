@@ -61,7 +61,7 @@ class postlist extends Component
     render()
     {
         return (
-            <div className="md:ml-64 ml-0 w-auto h-screen overflow-yscroll bg-gray-100">
+            <div className="lg:ml-96 md:ml-64 ml-0 w-auto h-screen overflow-yscroll bg-gray-100">
                 <TopCategoryBar/>
                 <Posttitle page={this.state.page} contents={this.state.posts}/>
             </div>
