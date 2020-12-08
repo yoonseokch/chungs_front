@@ -7,8 +7,8 @@ class mainScreen extends Component
     {
         return (
             <div className="">
-                <div className="w-full bg-center bg-cover" style={{backgroundImage: `url(${backimage})`}}>
-                    <div className="md:visible h-160 ml-auto mr-auto font-bold text-white text-4xl w-48 pt-32">
+                <div className="md:visible md:h-auto h-0 invisible w-full bg-center bg-cover" style={{backgroundImage: `url(${backimage})`}}>
+                    <div className="md:visible md:h-160 h-0 md:visible invisible ml-auto mr-auto font-bold text-white text-4xl w-48 pt-32">
                         환영합니다!
                     </div>
                 </div>
