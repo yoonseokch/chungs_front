@@ -11,7 +11,7 @@ class postlist extends Component
     }
     componentDidUpdate()
     {
-        console.log("Ho");
+
     }
     up = () =>{
         this.setState({
