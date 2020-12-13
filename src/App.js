@@ -7,6 +7,7 @@ import Main from './main/mainScreen.js';
 import Profile from './profile/profile.js';
 import Boards from './boards/boards.js';
 import Write from './boards/postWrite.js';
+import File from './boards/file.js';
 class App extends Component
 {
   render()
@@ -21,6 +22,7 @@ class App extends Component
             <Route path="/board" component={Boards}/>
             <Route exact path="/login" component={Login}/>
             <Route exact path="/write" component={Write}/>
+            <Route exact path="/file" component={File}/>
             {/* <Route path="/me" component={analyze}/> */}
             <Redirect path="*" to="/" />
           </Switch>

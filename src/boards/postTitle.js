@@ -57,7 +57,7 @@ class postTitle extends Component
         if (this.props.contents[0])
         {
             return (
-                <div className="overflow-hidden border border-gray-100 w-4/5 max-w-4xl ml-auto mr-auto bg-white">
+                <div className="overflow-hidden border border-gray-100 md:w-4/5 w-auto max-w-4xl md:ml-auto md:mr-auto mx-1 bg-white">
                     <div id="titleboard" className="border-gray-200 my-8 border-t border-b mx-8">
                         {this.props.contents[this.state.page].map((post,idx) => (
                             <Posttitleli key={idx} contents={post}/>

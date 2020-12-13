@@ -5,10 +5,10 @@ class profileli extends Component
     {
         return (
             <div>
-                <div type="text" className="mt-6 text-xl">
+                <div type="text" className="break-words flex-wrap mt-6 text-xl">
                 {this.props.contents.Name}
                 </div>
-                <div type="text" className="mt-2 text-base whitespace-pre-line">
+                <div type="text" className="break-words flex-wrap mt-2 text-base whitespace-pre-line">
                 {this.props.contents.Description}
                 </div>
             </div>
