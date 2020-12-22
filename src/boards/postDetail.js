@@ -28,7 +28,7 @@ class postDetail extends Component
     render()
     {
         return (
-            <div className="lg:ml-96 md:ml-64 ml-0 w-auto pb-12 overflow-yscroll bg-gray-100">
+            <div className="lg:ml-96 md:ml-64 ml-0 w-auto pb-12 overflow-yscroll bg-gray-100 min-h-screen">
                 <div className="w-4/5 max-w-4xl py-16 md:w-4/5 md:px-12 w-full px-2 font-bold md:text-4xl text-2xl ml-auto mr-auto text-center">
                     {this.state.post.title}
                 </div>
